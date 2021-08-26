@@ -90,7 +90,7 @@ html {
 .recipe-name-text {
     text-decoration: none;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-style: italic;
     font-weight: 700;
     width: 30vh;
@@ -185,7 +185,7 @@ html {
     .recipe-name-text {
         text-decoration: none;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-style: italic;
         font-weight: 700;
         width: 25vh;
@@ -245,7 +245,7 @@ html {
     .recipe-name-text {
         text-decoration: none;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-style: italic;
         font-weight: 700;
         width: 25vh;
