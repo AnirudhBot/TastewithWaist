@@ -75,6 +75,12 @@ recipeResult.addEventListener( "click", (e) => {
     }
 });
 
+window.addEventListener( "mouseup", (e) => {
+    if(e.target != recipeDisplay && e.target.parentElement != recipeDisplay && e.target.parentElement.parentElement != recipeDisplay) {
+        recipeDisplay.style.display = "none";
+    }
+})
+
 
 
   
