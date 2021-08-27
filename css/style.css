@@ -233,6 +233,7 @@ html {
         }
 
         .recipe-info-popup {
+            transform: translate(-57%, -55%);
             width: 60vw;
             max-height: 60vh;
         }
@@ -278,6 +279,7 @@ html {
         }
 
         .recipe-info-popup {
+            transform: translate(-62%, -60%);
             width: 80vw;
             max-height: 60vh;
         }
