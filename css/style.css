@@ -1,3 +1,4 @@
+/* CSS styling of complete website*/
 html {
     height: 100%;
     background: url("../images/bg\ 2.png"); 
@@ -10,7 +11,7 @@ html {
     color: black;
 }
 
-.main-section , .recipe-main-section {
+.main-section , .recipe-main-section , .nutrition-main-section {
     display: flex;
     flex-direction: column;
     background: url("../images/bg\ 2.png"); 
@@ -23,25 +24,52 @@ html {
 }
 
 
-.main-heading h1 {
-    margin-top: 50px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 2.5rem;
-}
 
-.recipe-heading h1 {
-    margin-top: 50px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 2.5rem;
-}
-
+/* Home-page exclusive styles start*/
 .main-options {
     margin: 80px 120px 80px 120px;
 }
 
-.recipe-search {
+.row {
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.main-btn {
+    width: 50vw;
+    color: white;
+}
+/* Home-page exclusive styles end*/
+
+
+
+
+/* Header styling starts */
+.nutrition-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-heading h1 , .recipe-heading h1 , .nutrition-heading h1 {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.nutrition-heading cite {
+    color: black;
+    font-weight: 500;
+}
+/* Header styling ends */
+
+
+
+
+/* Search Bar and icon styling starts */
+.recipe-search , .nutrition-search {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -62,7 +90,11 @@ html {
     color: black;
     cursor: pointer;
 }
+/* Search Bar and icon styling ends */
 
+
+
+/* Recipe-page exclusive styling starts */
 .recipe-result {
     display: flex;
     margin: auto;
@@ -101,96 +133,7 @@ html {
 }
 
 
-.recipe-info-popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-55%, -55%);
-    z-index: 2;
-    margin: 40px;
-    padding: 10px;
-    padding-bottom: 20px;
-    background-color: white;
-    border: 1.5px solid black;
-    border-radius: 6px;
-    width: 60vw;
-    max-height: 80vh;
-    overflow: auto;
-}
-
-.recipe-info-header {
-    text-align: center;
-}
-
-.recipe-close {
-    font-size: 1.25rem;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    cursor: pointer;
-}
-
-.recipe-info {
-    margin: 15px 20px 30px 20px;
-}
-
-.recipe-info-image {
-    text-align: center;
-}
-
-.recipe-info-image img {
-    width: 30vw;
-    border-radius: 6px;
-}
-
-.row {
-    margin: auto;
-    margin-bottom: 50px;
-    text-align: center;
-    justify-content: center;
-}
-
-.main-btn {
-    width: 50vw;
-    color: white;
-}
-
-
-@media (min-width: 1025px) {
-   
-    .recipe-info-image img {
-        width: 15vw;
-        border-radius: 6px;
-    }
-
-    .recipe-info {
-        margin: 15px 20px 30px 20px;
-        
-    }
-}
-
-@media (min-width: 721px) and (max-width: 1024px) {
-    .recipe-items {
-        margin: 30px;
-        background-color: white;
-        padding: 8px;
-        border-radius: 8px;
-    }
-
-    .recipe-img img {
-        height: 25vh;
-        border-radius: 5px;
-    }
-
-    .recipe-name-text {
-        text-decoration: none;
-        text-align: center;
-        font-size: 1.25rem;
-        font-style: italic;
-        font-weight: 700;
-        width: 25vh;
-    }
-
+    /* Recipe-page JS Modal styling for recipe info starts */
     .recipe-info-popup {
         display: none;
         position: fixed;
@@ -205,67 +148,143 @@ html {
         border: 1.5px solid black;
         border-radius: 6px;
         width: 60vw;
-        max-height: 60vh;
+        max-height: 80vh;
         overflow: auto;
     }
-}
 
-@media (max-width: 720px) {
-    .recipe-heading h1 {
-        margin-top: 50px;
-        text-align: center;
-        font-weight: 700;
-        font-size: 2.25rem;
-    }
-
-    .search-bar {
-        width: 45vw;
-        border: 2px solid black;
-        border-radius: 5px;
-        height: 2rem;
-    }
-
-    .recipe-items {
-        margin: 25px;
-        background-color: white;
-        padding: 5px;
-        border-radius: 8px;
-    }
-
-    .recipe-img img {
-        height: 25vh;
-        border-radius: 5px;
-    }
-
-    .recipe-name {
-        margin-top: 3px;
-        margin-bottom: 8px;
-    }
-
-    .recipe-name-text {
-        text-decoration: none;
-        text-align: center;
+    .recipe-close {
         font-size: 1.25rem;
-        font-style: italic;
-        font-weight: 700;
-        width: 25vh;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        cursor: pointer;
     }
 
-    .recipe-info-popup {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-62%, -55%);
-        z-index: 2;
-        margin: 40px;
-        padding: 10px;
-        padding-bottom: 20px;
-        background-color: white;
-        border: 1.5px solid black;
-        border-radius: 6px;
-        width: 80vw;
-        max-height: 60vh;
-        overflow: auto;
+    .recipe-info-header {
+        text-align: center;
     }
+
+    .recipe-info {
+        margin: 15px 20px 30px 20px;
+    }
+
+    .recipe-info-image {
+        text-align: center;
+    }
+
+    .recipe-info-image img {
+        width: 30vw;
+        border-radius: 6px;
+    }
+    /* Recipe-page JS Modal styling for recipe info ends */
+/* Recipe-page exclusive styling ends */
+
+
+
+/* Nutrition-page exclusive styling starts */
+.nutrition-table {
+    margin-top: 20px;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    width: 20vw;
+    height: 30vh;
 }
+
+.nutrition-rows {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.blank-row {
+    height: 15px;
+}
+/* Nutrition-page exclusive styling ends */
+
+
+
+
+/* Media Queries  */
+
+    /* for large width devices */
+    @media (min-width: 1025px) {
+
+        .main-btn {
+            width: 40vw;
+
+        }
+    
+        .recipe-info-image img {
+            width: 15vw;
+            border-radius: 6px;
+        }
+
+    }
+
+    /* for medium width devices */
+    @media (min-width: 721px) and (max-width: 1024px) {
+
+        .recipe-img img {
+            height: 25vh;
+            border-radius: 5px;
+        }
+
+        .recipe-name-text {
+            width: 25vh;
+        }
+
+        .recipe-info-popup {
+            width: 60vw;
+            max-height: 60vh;
+        }
+
+
+        .nutrition-table {
+            margin-top: 80px;
+            width: 35vw;
+            height: 25vh;
+        }
+    }
+
+    /* for small width devices */
+    @media (max-width: 720px) {
+
+        .recipe-heading h1 , .nutrition-heading h1 {
+            font-size: 2rem;
+        }
+
+        .search-bar {
+            width: 45vw;
+        }
+
+        .recipe-items {
+            margin: 25px;
+            background-color: white;
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .recipe-img img {
+            height: 25vh;
+            border-radius: 5px;
+        }
+
+        .recipe-name {
+            margin-top: 3px;
+            margin-bottom: 8px;
+        }
+
+        .recipe-name-text {
+            width: 25vh;
+        }
+
+        .recipe-info-popup {
+            width: 80vw;
+            max-height: 60vh;
+        }
+
+
+        .nutrition-table {
+            width: 50vw;
+            height: 30vh;
+        }
+    }

@@ -7,6 +7,8 @@ let recipeResult = document.querySelector(".recipe-result");
 let recipeDisplay = document.querySelector(".recipe-info-popup");
 
 
+// fetching and displaying recipe list as per user search
+
 searchClick.addEventListener( "click" , (e) => {
     e.preventDefault();
     const searchInput = searchBar.value;
@@ -39,6 +41,8 @@ searchClick.addEventListener( "click" , (e) => {
     })
 })
 
+
+// Recipe Modal popup for user-selected recipe
 
 recipeResult.addEventListener( "click", (e) => {
     e.preventDefault();
@@ -74,6 +78,9 @@ recipeResult.addEventListener( "click", (e) => {
 
     }
 });
+
+
+// Modal closes if user clicks outside it
 
 window.addEventListener( "mouseup", (e) => {
     if(e.target != recipeDisplay && e.target.parentElement != recipeDisplay && e.target.parentElement.parentElement != recipeDisplay) {
