@@ -19,7 +19,7 @@
   <h2>Technologies Used</h2>
   <ul>
     <li>JavaScript (ES6+)</li>
-    <li>CSS (with Flexbox and Bootstrap)</li>
+    <li>CSS</li>
     <li>HTML</li>
   </ul>
 <br>  
