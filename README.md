@@ -1,4 +1,4 @@
-# TastewithWaist
+<h1> TastewithWaist </h1>
 <h3>Recipe Search and Nutrition Analysis website</h3>
 <i> Enjoy mouth-watering dishes without compromising on your fitness goals!</i>
 <br>
