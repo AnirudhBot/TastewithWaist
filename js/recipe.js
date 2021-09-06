@@ -41,6 +41,13 @@ searchClick.addEventListener( "click" , (e) => {
     })
 })
 
+searchBar.addEventListener("keyup", e => {
+    e.preventDefault();
+    if(e.keyCode == 13) {
+        searchClick.click();
+    }
+})
+
 
 // Recipe Modal popup for user-selected recipe
 

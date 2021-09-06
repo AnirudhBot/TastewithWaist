@@ -44,3 +44,10 @@ searchIcon.addEventListener( "click", () => {
     else alert('Enter some input');
 
 })
+
+searchQuery.addEventListener("keyup", e => {
+    e.preventDefault();
+    if(e.keyCode == 13) {
+        searchIcon.click();
+    }
+})
